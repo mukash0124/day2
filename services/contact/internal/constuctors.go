@@ -11,7 +11,7 @@ func NewContactRepository() repository.ContactRepository {
 }
 
 func NewContactUseCase(repo repository.ContactRepository) usecase.ContactUseCase {
-	return nil
+	return usecase.NewContactUseCase(NewContactRepository())
 }
 
 func NewContactDelivery(useCase usecase.ContactUseCase) delivery.ContactDelivery {
