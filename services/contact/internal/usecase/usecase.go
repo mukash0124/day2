@@ -1,4 +1,4 @@
-package use_case
+package usecase
 
 import (
 	"architecture_go/services/contact/internal/domain"
