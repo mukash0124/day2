@@ -1,10 +1,8 @@
-package usecase
+package repository
 
-import (
-	"architecture_go/services/contact/internal/domain"
-)
+import "architecture_go/services/contact/internal/domain"
 
-type ContactUseCase interface {
+type ContactRepository interface {
 	CreateContact(contact domain.Contact) error
 	ReadContact(contactID int) (domain.Contact, error)
 	UpdateContact(contactID int, newContact domain.Contact) error
